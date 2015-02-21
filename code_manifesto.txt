@@ -1,0 +1,126 @@
+A-TEAM CODE MANIFESTO
+=========================
+
+
+1. CODE HAS COMPLETE AND CLEAR DOCUMENTATION
+--------------------------------------------
+All classes and methods have documentation using the documentation
+template.  Furthermore, the function and intention of every line of code
+can be immediately understood by even a junior programmer that has never
+seen the code before.   Lines of code less than this easy to understand
+have a comment explaining the function and intention.  Remember that in
+general, developers learn by example.  USE EXAMPLES to explain and document
+code.  If in doubt whether a line needs a comment, just ask another
+developer if they can clearly and immediately understand it.
+
+
+2. CODE HAS UNIT TESTS
+----------------------
+All new code has unit tests if at all possible.  If it is not possible due to
+software architecture, a bug is raised identifying the need for refactoring.
+All easily reproducible bugs have a unit test that proves the bug is fixed.
+All unit tests are run anytime code is checked in.
+Unit tests are code and follow the code manifesto.
+Broken unit tests never exist in the MASTER (or stable) branch.
+
+
+3. CODE IS CREATED COLLABORATIVELY
+----------------------------------
+There is never a single author to any code change.
+Pair Programming is the ideal but not always appropriate.
+Other options include:
+  * one developer doing the code and another does the comments
+  * one developer does the unit tests, another does the code
+
+It is ultimately up to the developer to decide which method to use such that
+someone else sees, understands, and verifies every line of code.
+When pair programming, any code for prototype or research is done in a
+separate branch, and recreated (not merged) as a team in the production branch.
+
+The Collaborator is clearly identified in the SCR.
+
+
+
+4. CODE FOLLOWS NAMING AND STYLE CONVENTIONS
+--------------------------------------------
+Our code follows
+http://www.python.org/dev/peps/pep-0008/
+
+One exception is spacing of blocks.  If a block is 4 or more lines,
+alternative spacing is used for readability.
+
+For example we would use spacing like this:
+
+x = 1
+y = 2
+long_variable = 10
+
+and like this:
+
+x             = 1
+y             = 2
+z             = 3
+long_variable = 10
+
+
+
+
+
+
+=========================== DOCUMENTATION TEMPLATES ========================
+A. CLASS
+========
+class AsmodeusClient(object):
+    """Defines the Asmodeus interface for interacting directly with ACA output.
+    The object is essentially a scriptable, headless client.
+
+    Example usage::
+
+        ac = AsmodeusClient(('http://cloud10.browser.ovi.com', 80),
+                            '1.5.0.34.15', '07.16', 'NokiaX3-02', proxied=True)
+
+    The code above would create a client simulating the Agra version of the
+    browser on a Lenny device with 7.16 version firmware, routed through the
+    Nokia proxy.
+
+    :param host: the address of the ACA to connect to
+    :type host: a (str, int) tuple
+    :param string version: the client version to simulate
+    :param string firmware: the device firmware to simulate
+    :param string consumer_name: the consumer name of the device
+    :param bool proxied: whether or not the client must go through a proxy to
+                         talk to outside servers - if set to True, the client
+                         will use the official Nokia proxy"""
+
+    def __init__(self, host, version, firmware, consumer_name, proxied=False,
+                 debug=False, img_prefix=None,
+                 screen={'height': 320, 'width': 240, 'menu': 44}):
+
+
+B. METHOD
+=========
+    def _handle_secure_redirect(self, req, resp):
+        """Handle a secure redirect from the ACA.  This method replaces the
+        protocol with https://, sets the 'SecureClientConnection' event
+        header, and ensures the request goes out over an encrypted socket.
+
+        This method is called automatically by :meth:`load_page` when it
+        detects a secure redirect from the ACA.  It returns a new response,
+        which should be actual page originally requested.
+
+        :param :class:`ACARequest` req: the original request that resulted in
+                                        the redirect
+        :param :class:`ACAResponse` resp: the redirect response itself
+        :rtype: :class:`ACAResponse`"""
+
+
+c. CODE SIGNATURE
+=================
+As developers that deal in the real world, we expect that we will encounter
+legacy code.  When we do, we bring it up to spec and we sign it with the
+following comment line and place the line after all imports
+
+# ---- Checked October 24, 2012 ---- aaron
+
+Once we have brought a legacy file up to date, we use git blame to see who did what.
+Therefor this tag only needs to be created once, and never updated.
