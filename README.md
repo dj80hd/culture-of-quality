@@ -3,7 +3,7 @@ James Werwath
 October 2014
 
 
-[Holy Cow! This is way too long! Take me to the summary!](#conclusion)
+*Holy Cow! This is way too long! [Take me to the summary!](#conclusion)*
 
 ## Dedication
 
