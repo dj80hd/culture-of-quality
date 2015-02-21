@@ -1,6 +1,5 @@
 # Experiments in a Culture of Quality
-James Werwath
-October 2014
+
 
 
 *Holy Cow! This is way too long! [Take me to the summary!](#conclusion)*
@@ -203,3 +202,6 @@ References
 [4] Fiddler web debugging proxy http://www.telerik.com/fiddler
 
 [5] History of Apache Storm and Lessons Learned http://nathanmarz.com/blog/history-of-apache-storm-and-lessons-learned.html
+
+
+James Werwath October 2014
