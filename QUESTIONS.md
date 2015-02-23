@@ -53,3 +53,5 @@
 * To what degree are Automation and Coninuous Integration prioritized in the project plan ?
 
 * In the organization, does QA address quality of information, documentation, and communication as well as the software itself ?
+
+* Does the culture care about quality?  How can you tell ?
