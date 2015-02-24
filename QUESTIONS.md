@@ -15,7 +15,7 @@
 * Does code have a debug mode where any exceptions can be easily retrieved and analyzed.
 
 * Are performance tests run regularity ?
- 
+
 * Are the results of theses tests recorded in a central datastore ?
 
 * Does every error message presented to the user have a unquie error id that can be traced to a single line of code?
@@ -38,22 +38,26 @@
 
 * Does code swallow any exceptions, if so is there an automated way to detect this when the code is built?
 
-* Are Development and QA seperate teams or are members of each in the same team so they are co-located and can collaborate more easily?
+* Are Development and QA separate teams or are members of each in the same team so they are co-located and can collaborate more easily?
 
-* Does QA happen after Develpoment or are QA and Development an iterative process ?
+* Does QA happen after Development or are QA and Development an iterative process ?
 
 * Is Documentation tested for usefulness, completeness, and understandability ?
 
-* Is there a reward or recoginitionn for those that supply quality information and documenation ?
+* Is there a reward or recognition for those that supply quality information and documentation ?
 
 * To what degree, and how early are the users of the product involved in the development and qa process ?
 
 * To what degree is Automation and Continuous Integration used in the development and QA process ?
 
-* To what degree are Automation and Coninuous Integration prioritized in the project plan ?
+* To what degree are Automation and Continuous Integration prioritized in the project plan ?
 
 * In the organization, does QA address quality of information, documentation, and communication as well as the software itself ?
 
 * Does the culture care about quality?  How can you tell ?
 
+* Does the organization maintain information centrally in a place like a wiki?
 
+* Are updates to this information performed alongside feature updates and bug fixes?
+
+* Is their a mechanism within this information repository to reward those that contribute positively ?  (e.g. Stack Exchange allows members to up vote questions and answers)
