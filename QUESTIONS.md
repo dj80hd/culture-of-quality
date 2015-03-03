@@ -61,3 +61,5 @@
 * Are updates to this information performed alongside feature updates and bug fixes?
 
 * Is their a mechanism within this information repository to reward those that contribute positively ?  (e.g. Stack Exchange allows members to up vote questions and answers)
+
+* Do web applications wrap a lower level REST or JSON API that can be tested without the UI.  Likewise, do GUI applications wrap a command line that can be easily tested and automated without the UI ? 
