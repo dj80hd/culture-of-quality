@@ -42,8 +42,10 @@ One of our many slogans was "Be the Change You Want", meaning that if we wanted 
 
 We used comment lines right inside the code with standard formats that indicated the severity of the technical debt, the rough estimate of its effort, and the name of the individual that discovered it.  Severity had 3 levels: TODO, FIXME, and DRAGON.  TODO was something that would not affect the end user of the product but would be a nice thing to address for maintainability or performance.  FIXME was something that had a chance of affecting the end user or at least compromise the running system in some way.  DRAGON was a disaster waiting to happen.  The effort estimates were SMALL, MEDIUM, and LARGE. SMALL being a day or less, MEDIUM being on the order of days to a week, and LARGE being more than a week.  A sample comment line follows.  As one can see, this would make technical debt very easy to measure with automated scripts:
 
-> //FIXME MEDIUM (werwath) - The items in this queue will be lost
+'''
+//FIXME MEDIUM (werwath) - The items in this queue will be lost
 //on system reset and result in unreported erroneous results.
+'''
 
 
 Once standards and measurements are in place it is imperative to make them obviously visible and regularly reported.  If one is required to dig for information, it becomes a significant barrier.  .  Technical debt, unit test coverage, documentation standards conformance, functional test results and performance metrics are ideally displayed in real time on a big monitor in our workspace where we all can see it.  This makes quality a central part of what we are doing and keeps us accountable.
