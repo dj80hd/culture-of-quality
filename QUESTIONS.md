@@ -62,4 +62,6 @@
 
 * Is their a mechanism within this information repository to reward those that contribute positively ?  (e.g. Stack Exchange allows members to up vote questions and answers)
 
-* Do web applications wrap a lower level REST or JSON API that can be tested without the UI.  Likewise, do GUI applications wrap a command line that can be easily tested and automated without the UI ? 
+* Do web applications wrap a lower level REST or JSON API that can be tested without the UI.  Likewise, do GUI applications wrap a command line that can be easily tested and automated without the UI ?
+
+* Do applications and the organization at large have standards for logging: Frameworks, message formats, and methods of retrieval that are easily automated? 
