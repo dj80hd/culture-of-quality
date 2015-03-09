@@ -4,7 +4,7 @@
 
 * What is the the current code coverage of those tests ?
 
-* Is the the coverage reported on every build ?
+* Is the coverage reported on every build ?
 
 * Is there a minimum accpetable coverage (e.g. 80% coverage) that is required for a build to pass
 
