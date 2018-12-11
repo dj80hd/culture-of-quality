@@ -1,8 +1,6 @@
 # Experiments in a Culture of Quality
 
-
-
-*Holy Cow! This is way too long! [Take me to the summary!](#conclusion)*
+[TL;DR](#conclusion)
 
 ## Dedication
 
