@@ -191,9 +191,10 @@ For this to happen however, we must remember the following:
 
 4. Accountability is the root of both good culture and good quality.  Accountability is enhanced by ownership and collaboration. Accountability is limited by isolation and possibly by traditional corporate reporting hierarchies.
 
-We arrived at these things by experiment, by experience, and sometimes by accident, ever reminding us that the spirit of curiosity and pursuit of right questions rather than the right answers will lead us in any great endeavor.
+We arrived at these things by experiment, by experience, and sometimes by accident, always reminding us that curiosity and the right questions will lead us in any great endeavor.
 
-References
+References:
+
 [1] Beck, Kent; et al. (2001). "Principles behind the Agile Manifesto". Agile Alliance. Archived from the original on 14 June 2010. Retrieved 6 June 2010.
 
 [2] A-Team Code Mainfesto https://drive.google.com/file/d/0B49uMrhVfmL9Rm5LNl9JRUZvR3c/view
